@@ -6,9 +6,9 @@ public class NBody {
 		return radius;
 	}
 	public static Body[] readBodies(String fileName) {
-		Body[] bodies = new Body[5];
 		In in = new In(fileName);
 		int number = in.readInt();
+		Body[] bodies = new Body[number];
 		double radius = in.readDouble();
 		for (int i = 0; i < 5; i ++) {
 			double xxPos = in.readDouble();
